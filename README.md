@@ -28,6 +28,7 @@ cd SMTPX
 #### Requirements
 - Python 3.8+
 - Rich
+```
 
 #### Usage:
 ```bash
@@ -50,8 +51,7 @@ python3 smtpx.py -t <SMTP_SERVER> [options]
 -h, --help	Show help message
 ```
 
-## Examples
-
+### Examples
 #### Single user check
 ```bash
 python3 smtpx.py -t smtp.example.com -u alice -M VRFY
