@@ -55,17 +55,49 @@ For SMTPX, the only external dependency the tool uses is `Rich` for the console 
 ```
 
 ### Examples
-#### Single user check
+#### Single user check + Debug mode
 ```bash
-./smtpx.py -t smtp.example.com -u alice -M VRFY
+./smptx.py -t 10.129.239.107 -u robin -d
 ```
+![1](https://github.com/cyb3rtr0nian/SMTPX/blob/main/screenshots/single-user.png?raw=true)
 
 #### Bulk userlist
 ```bash
-./smtpx.py -t smtp.example.com -U userlist.txt -M RCPT -f attacker@example.com -D example.com -T 10
+./smptx.py -t 10.129.239.107 -U userlist.txt -T 50 -M VRFY -v 
 ```
+![2](https://github.com/cyb3rtr0nian/SMTPX/blob/main/screenshots/wordlist-1.png?raw=true)
+![2](https://github.com/cyb3rtr0nian/SMTPX/blob/main/screenshots/wordlist-2.png?raw=true)
+![4](https://github.com/cyb3rtr0nian/SMTPX/blob/main/screenshots/wordlist-3.png?raw=true)
 
 #### Verbose + Debug mode
 ```bash
-./smtpx.py -t smtp.example.com -U examples/userlist.txt -v -d
+./smptx.py -t 10.129.239.107 -U userlist.txt -T 50 -M VRFY -v -d
+```
+![5](https://github.com/cyb3rtr0nian/SMTPX/blob/main/screenshots/wordlist+debug.png?raw=true)
+![6](https://github.com/cyb3rtr0nian/SMTPX/blob/main/screenshots/debug%20output.png?raw=true)
+
+#### Verify with **Netcat**
+![7](https://github.com/cyb3rtr0nian/SMTPX/blob/main/screenshots/verify.png?raw=true)
+
+#### Other usage example
+##### Advanced Techniques
+```bash
+# RCPT method with custom domain and MAIL FROM
+./smptx.py -U users.txt -t 10.10.10.10 -M RCPT -D example.com -f attacker@evil.com
+
+# EXPN method with debugging enabled
+./smptx.py -U users.txt -t 10.10.10.10 -M EXPN -d
+
+# Email enumeration with domain
+./smptx.py -U usernames.txt -t 10.10.10.10 -D target-company.com -v
+```
+##### Troubleshooting & Debugging
+```bash
+# Debug connection issues
+./smptx.py -u testuser -t 10.10.10.10 -d -w 20
+
+# Test all three methods
+./smptx.py -u testuser -t 10.10.10.10 -M VRFY
+./smptx.py -u testuser -t 10.10.10.10 -M EXPN
+./smptx.py -u testuser -t 10.10.10.10 -M RCPT
 ```
