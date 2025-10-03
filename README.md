@@ -1,5 +1,5 @@
-# SMTPX
-SMTPX – Fast, accurate, and stealthy SMTP user enumeration tool. Outperforms all traditional SMTP enumeration scripts.
+# SMTPX – Ultimate SMTP User Enumeration Tool
+SMTPX is a fast, accurate, and stealthy SMTP user enumeration tool. Outperforms all traditional SMTP enumeration scripts.
 
 ---
 
@@ -15,27 +15,26 @@ SMTPX – Fast, accurate, and stealthy SMTP user enumeration tool. Outperforms a
 - ✅ Accurately detects valid users even with ambiguous SMTP responses
 - ✅ Handles timeouts, connection errors, and tricky server responses
 
-> ⚡ **SMTPX beats standard tools like smtp-user-enum, both in speed and accuracy.**
+> ⚡ **SMTPX beats standard tools like `smtp-user-enum`, both in speed and accuracy.**
 
 
 ## Installation
 
-Clone the repository:
 ```bash
 git clone https://github.com/yourusername/SMTPX.git
 cd SMTPX
 ```
 
-## Requirements
+#### Requirements
 - Python 3.8+
 - Rich
 
-Usage:
+#### Usage:
 ```bash
-python3 -t <SMTP_SERVER> [options]
+python3 smtpx.py -t <SMTP_SERVER> [options]
 ```
 
-## Options:
+#### Options:
 ```bash
 -t, --target	Target SMTP server (required)
 -U, --userlist	Path to a file containing usernames
@@ -55,15 +54,15 @@ python3 -t <SMTP_SERVER> [options]
 
 #### Single user check
 ```bash
-./smtpx.py -t smtp.example.com -u alice -M VRFY
+python3 smtpx.py -t smtp.example.com -u alice -M VRFY
 ```
 
 #### Bulk userlist
 ```bash
-./smtpx.py -t smtp.example.com -U examples/userlist.txt -M RCPT -f attacker@example.com -D example.com -T 10
+python3 smtpx.py -t smtp.example.com -U userlist.txt -M RCPT -f attacker@example.com -D example.com -T 10
 ```
 
 #### Verbose + Debug mode
 ```bash
-./smtpx.py -t smtp.example.com -U examples/userlist.txt -v -d
+python3 smtpx.py -t smtp.example.com -U userlist.txt -v -d
 ```
