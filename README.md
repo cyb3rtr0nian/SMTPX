@@ -62,7 +62,7 @@ For SMTPX, the only external dependency the tool uses is `Rich` for the console 
 
 #### Bulk userlist
 ```bash
-./smtpx.py -t smtp.example.com -U examples/userlist.txt -M RCPT -f attacker@example.com -D example.com -T 10
+./smtpx.py -t smtp.example.com -U userlist.txt -M RCPT -f attacker@example.com -D example.com -T 10
 ```
 
 #### Verbose + Debug mode
