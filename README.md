@@ -23,6 +23,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/yourusername/SMTPX.git
 cd SMTPX
+chmod +x smtpx.py
 ```
 
 ## Requirements
@@ -34,7 +35,7 @@ For SMTPX, the only external dependency the tool uses is `Rich` for the console 
 
 ## Usage
 ```bash
-python3  -t <SMTP_SERVER> [options]
+./smtpx.py -t <SMTP_SERVER> [options]
 ```
 
 ### Options
