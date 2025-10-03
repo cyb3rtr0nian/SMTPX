@@ -3,6 +3,9 @@
 # -*- coding: utf-8 -*-
 
 """
+
+Author: Cyb3rtr0n @2025
+
 SMTPX – Ultimate SMTP User Enumeration Tool
 --------------------------------------------
 
@@ -19,9 +22,6 @@ Features:
 - Live dynamic console UI using Rich
 - Verbose and debug modes for troubleshooting
 - Accurate detection of valid users even with ambiguous SMTP responses
-
-Author: [Your Name or GitHub handle]
-License: MIT
 
 Usage:
 ------
@@ -438,3 +438,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
