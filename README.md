@@ -1,5 +1,5 @@
-# SMTPX
-SMTPX – Fast, accurate, and stealthy SMTP user enumeration tool. Outperforms all traditional SMTP enumeration scripts.
+# SMTPX – Ultimate SMTP User Enumeration Tool
+SMTPX is a fast, accurate, and stealthy SMTP user enumeration tool. Outperforms all traditional SMTP enumeration scripts.
 
 ---
 
@@ -17,7 +17,6 @@ SMTPX – Fast, accurate, and stealthy SMTP user enumeration tool. Outperforms a
 
 > ⚡ **SMTPX beats standard tools like smtp-user-enum, both in speed and accuracy.**
 
-
 ## Installation
 
 Clone the repository:
@@ -33,12 +32,12 @@ For SMTPX, the only external dependency the tool uses is `Rich` for the console 
 - Rich
 ```
 
-## Usage:
+## Usage
 ```bash
 python3  -t <SMTP_SERVER> [options]
 ```
 
-### Options:
+### Options
 ```bash
 -t, --target	Target SMTP server (required)
 -U, --userlist	Path to a file containing usernames
