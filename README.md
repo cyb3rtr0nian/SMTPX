@@ -27,15 +27,18 @@ cd SMTPX
 ```
 
 ## Requirements
+For SMTPX, the only external dependency the tool uses is `Rich` for the console output.
+```bash
 - Python 3.8+
 - Rich
-
-Usage:
-```bash
-python3 -t <SMTP_SERVER> [options]
 ```
 
-## Options:
+## Usage:
+```bash
+python3  -t <SMTP_SERVER> [options]
+```
+
+### Options:
 ```bash
 -t, --target	Target SMTP server (required)
 -U, --userlist	Path to a file containing usernames
@@ -51,8 +54,7 @@ python3 -t <SMTP_SERVER> [options]
 -h, --help	Show help message
 ```
 
-## Examples
-
+### Examples
 #### Single user check
 ```bash
 ./smtpx.py -t smtp.example.com -u alice -M VRFY
