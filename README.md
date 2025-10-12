@@ -1,6 +1,5 @@
 # SMTPX – Ultimate SMTP User Enumeration Tool
-SMTPX is a fast, accurate, and stealthy SMTP user enumeration tool. Outperforms all traditional SMTP enumeration scripts.
-
+A high-performance, multi-threaded SMTP user enumeration tool with real-time visualization, designed for penetration testers and security professionals to efficiently identify valid users on SMTP servers.
 ---
 
 ## Features
