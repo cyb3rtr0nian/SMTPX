@@ -40,18 +40,18 @@ For SMTPX, the only external dependency the tool uses is `Rich` for the console 
 
 ### Options
 ```bash
--t, --target	Target SMTP server (required)
--U, --userlist	Path to a file containing usernames
--u, --user	Single username to test
--M, --method	Enumeration method: VRFY (default), EXPN, RCPT
--f, --from-addr	MAIL FROM address (used in RCPT mode, default: user@example.com)
--D, --domain	Domain to append to usernames
--p, --port	SMTP port (default: 25)
--T, --threads	Number of threads (default: 5)
--w, --wait	Timeout in seconds (default: 10)
--v, --verbose	Verbose output
--d, --debug	Debug output for troubleshooting
--h, --help	Show help message
+-t, --target	   Target SMTP server (required)
+-U, --userlist	 Path to a file containing usernames
+-u, --user	     Single username to test
+-M, --method	   Enumeration method: VRFY (default), EXPN, RCPT
+-f, --from-addr	 MAIL FROM address (used in RCPT mode, default: user@example.com)
+-D, --domain	   Domain to append to usernames
+-p, --port	     SMTP port (default: 25)
+-T, --threads	   Number of threads (default: 5)
+-w, --wait	     Timeout in seconds (default: 10)
+-v, --verbose	   Verbose output
+-d, --debug	     Debug output for troubleshooting
+-h, --help	     Show help message
 ```
 
 ### Examples
@@ -61,15 +61,17 @@ For SMTPX, the only external dependency the tool uses is `Rich` for the console 
 ```
 ![1](https://github.com/cyb3rtr0nian/SMTPX/blob/main/screenshots/single-user.png?raw=true)
 
-#### Bulk userlist
+#### Bulk userlist + Verbose mode
 ```bash
 ./smptx.py -t 10.129.239.107 -U userlist.txt -T 50 -M VRFY -v 
 ```
+
+##### Starting the attack:
 ![2](https://github.com/cyb3rtr0nian/SMTPX/blob/main/screenshots/wordlist-1.png?raw=true)
-![2](https://github.com/cyb3rtr0nian/SMTPX/blob/main/screenshots/wordlist-2.png?raw=true)
+##### Results:
 ![4](https://github.com/cyb3rtr0nian/SMTPX/blob/main/screenshots/wordlist-3.png?raw=true)
 
-#### Verbose + Debug mode
+#### Verbose + Debug modes
 ```bash
 ./smptx.py -t 10.129.239.107 -U userlist.txt -T 50 -M VRFY -v -d
 ```
