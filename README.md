@@ -40,18 +40,18 @@ For SMTPX, the only external dependency the tool uses is `Rich` for the console 
 
 ### Options
 ```bash
--t, --target	   Target SMTP server (required)
--U, --userlist	 Path to a file containing usernames
--u, --user	     Single username to test
--M, --method	   Enumeration method: VRFY (default), EXPN, RCPT
--f, --from-addr	 MAIL FROM address (used in RCPT mode, default: user@example.com)
--D, --domain	   Domain to append to usernames
--p, --port	     SMTP port (default: 25)
--T, --threads	   Number of threads (default: 5)
--w, --wait	     Timeout in seconds (default: 10)
--v, --verbose	   Verbose output
--d, --debug	     Debug output for troubleshooting
--h, --help	     Show help message
+-t, --target    Target SMTP server (required)
+-U, --userlist    Path to a file containing usernames
+-u, --user    Single username to test
+-M, --method    Enumeration method: VRFY (default), EXPN, RCPT
+-f, --from-addr    MAIL FROM address (used in RCPT mode, default: user@example.com)
+-D, --domain    Domain to append to usernames
+-p, --port    SMTP port (default: 25)
+-T, --threads    Number of threads (default: 5)
+-w, --wait    Timeout in seconds (default: 10)
+-v, --verbose    Verbose output
+-d, --debug    Debug output for troubleshooting
+-h, --help    Show help message
 ```
 
 ### Examples
