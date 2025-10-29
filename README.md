@@ -24,7 +24,7 @@ A high-performance, multi-threaded SMTP user enumeration tool with real-time vis
 
 Clone the repository:
 ```bash
-git clone https://github.com/yourusername/SMTPX.git
+git clone https://github.com/cyb3rtr0nian/SMTPX.git
 cd SMTPX
 chmod +x smtpx.py
 ```
