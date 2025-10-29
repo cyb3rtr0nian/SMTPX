@@ -1,3 +1,6 @@
+
+https://github.com/cyb3rtr0nian/SMTPX/blob/main/screenshots/smptx.png
+
 # SMTPX – Ultimate SMTP User Enumeration Tool
 A high-performance, multi-threaded SMTP user enumeration tool with real-time visualization, designed for penetration testers and security professionals to efficiently identify valid users on SMTP servers.
 
