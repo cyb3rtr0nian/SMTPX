@@ -23,7 +23,7 @@ A high-performance, multi-threaded SMTP user enumeration tool with real-time vis
 ## Installation
 
 Clone the repository:
-```bash
+```
 git clone https://github.com/cyb3rtr0nian/SMTPX.git
 cd SMTPX
 chmod +x smtpx.py
@@ -31,18 +31,18 @@ chmod +x smtpx.py
 
 ## Requirements
 For SMTPX, the only external dependency the tool uses is `Rich` for the console output.
-```bash
+```
 - Python 3.8+
 - Rich
 ```
 
 ## Usage
-```bash
+```
 ./smtpx.py -t <SMTP_SERVER> [options]
 ```
 
 ### Options
-```bash
+```
 -t, --target      Target SMTP server (required)
 -U, --userlist    Path to a file containing usernames
 -u, --user        Single username to test
@@ -59,13 +59,13 @@ For SMTPX, the only external dependency the tool uses is `Rich` for the console 
 
 ### Examples
 #### Single user check + Debug mode
-```bash
+```
 ./smptx.py -t 10.129.239.107 -u robin -d
 ```
 ![1](https://github.com/cyb3rtr0nian/SMTPX/blob/main/screenshots/single-user.png?raw=true)
 
 #### Bulk userlist + Verbose mode
-```bash
+```
 ./smptx.py -t 10.129.239.107 -U userlist.txt -T 50 -M VRFY -v 
 ```
 
@@ -75,7 +75,7 @@ For SMTPX, the only external dependency the tool uses is `Rich` for the console 
 ![4](https://github.com/cyb3rtr0nian/SMTPX/blob/main/screenshots/wordlist-3.png?raw=true)
 
 #### Verbose + Debug modes
-```bash
+```
 ./smptx.py -t 10.129.239.107 -U userlist.txt -T 50 -M VRFY -v -d
 ```
 ![5](https://github.com/cyb3rtr0nian/SMTPX/blob/main/screenshots/wordlist+debug.png?raw=true)
@@ -86,7 +86,7 @@ For SMTPX, the only external dependency the tool uses is `Rich` for the console 
 
 #### Other usage example
 ##### Advanced Techniques
-```bash
+```
 # RCPT method with custom domain and MAIL FROM
 ./smptx.py -U users.txt -t 10.10.10.10 -M RCPT -D example.com -f attacker@evil.com
 
@@ -97,7 +97,7 @@ For SMTPX, the only external dependency the tool uses is `Rich` for the console 
 ./smptx.py -U usernames.txt -t 10.10.10.10 -D target-company.com -v
 ```
 ##### Troubleshooting & Debugging
-```bash
+```
 # Debug connection issues
 ./smptx.py -u testuser -t 10.10.10.10 -d -w 20
 
